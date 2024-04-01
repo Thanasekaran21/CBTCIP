@@ -1,0 +1,70 @@
+﻿<Window x:Class="EVENTPLANNER360.BudgetTrackingConference"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BudgetTrackingConference" Height="350" Width="500">
+    <Grid>
+        <Grid Background="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition Height="30">
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"></ColumnDefinition>
+                <ColumnDefinition Width="185"></ColumnDefinition>
+                <ColumnDefinition Width="250"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text=" " Height="16" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="0"></TextBlock>
+            <CheckBox x:Name="stage"  Content="Stage Design" Checked="CheckBox_Checked_1" Height="25" Width="95" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1"></CheckBox>
+            <CheckBox x:Name="seat" Checked="seat_Checked_1" Content="Seat Design" Height="17" HorizontalAlignment="Center" Width="120" VerticalAlignment="Center"  Grid.Row="3" Grid.Column="1"></CheckBox>
+            <CheckBox x:Name="electricity" Checked="electricity_Checked_1" Content="Electricity" Height="25" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="4"></CheckBox>
+            <CheckBox x:Name="water" Checked="water_Checked_1" Content="Water" Height="25" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="5"></CheckBox>
+            <CheckBox x:Name="venue" Checked="venue_Checked_1" Content="Venue Decoration" Height="30" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="6"></CheckBox>
+            <TextBlock HorizontalAlignment="Left" Text="  Food Plate" Height="25" Width="100" Grid.Row="2"></TextBlock>
+            <TextBlock Text="Estimated Amount" Height="20" Width="100" Grid.Column="1" Grid.Row="0"></TextBlock>
+            <TextBlock Text="5000 INR" HorizontalAlignment="Left" Height="25" Width="70" Grid.Column="1" Grid.Row="1" Margin="0,0,0,5" VerticalAlignment="Bottom"></TextBlock>
+            
+            <TextBlock Text="3000 INR" HorizontalAlignment="Left" Height="30" Width="70" Grid.Column="1" Grid.Row="4"></TextBlock>
+            <TextBlock Text="2000 INR" HorizontalAlignment="Left" Height="30" Width="70" Grid.Column="1" Grid.Row="5"></TextBlock>
+            <TextBlock Text="3500 INR" HorizontalAlignment="Left" Height="30" Width="70" Grid.Column="1" Grid.Row="6"></TextBlock>
+            <CheckBox  x:Name="vegcheckbox2" Checked="vegcheckbox2_Checked_1"  Content="Veg" Height="20" Width="50" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left"  ></CheckBox>
+            <CheckBox x:Name="Nonvegcheckbox2" Checked="Nonvegcheckbox2_Checked_1"  Content="Non Veg" Height="20" Width="70" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Margin="51,5,20,5"></CheckBox>
+            <TextBlock Text="Important Note!" Height="20" Width="90" Grid.Column="1" Grid.Row="7" ></TextBlock>
+            <TextBlock Text="This is An Esitmated Amount  " Height="20" Width="200" Grid.Column="1" Grid.Row="8"></TextBlock>
+            <TextBlock Text=" No of Seats" Height="25" Width="78" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="3"></TextBlock>
+            <TextBox x:Name="strength" Height="15" Width="30" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" RenderTransformOrigin="0.567,0.333" Margin="0,3,0,12" ></TextBox>
+                <TextBlock x:Name="veg" Visibility="Hidden" HorizontalAlignment="Left" Text="Per Plate 100 RS" Height="20" Width="100" Grid.Row="10" Grid.Column="2"></TextBlock>
+            <TextBlock x:Name="Nonvg" Visibility="Hidden" HorizontalAlignment="Right" Text="Per Plate 200 RS" Height="20" Width="200" Grid.Row="10" Grid.Column="2"></TextBlock>
+            <TextBlock x:Name="detailseat" Text="(Per Seat design 100RS)" Height="20" HorizontalAlignment="Left" Width="125" Grid.Row="3" Grid.Column="2"></TextBlock>
+            <TextBlock x:Name="amnt" Text="Amount To Be Paid" Height="25" Width="100" HorizontalAlignment="Left" Grid.Row="5" Grid.Column="2"></TextBlock>
+            <TextBlock x:Name="pay" Height="20" Width="50" Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="2" Margin="114,2,86,0"></TextBlock>
+            <TextBlock x:Name="strtxt" Height="20" Width="80" HorizontalAlignment="Left" Text=" Plates Needed" Grid.Row="2" Grid.Column="1"></TextBlock>
+            <TextBox x:Name="str" Height="20" Width="50" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" Margin="0,5,27,5"></TextBox>
+            <Button x:Name="payment" Content="pay" Height="20" Width="60" Grid.Column="2" Grid.Row="6" Click="payment_Click_1"></Button>
+        </Grid>
+    </Grid>
+</Window>
