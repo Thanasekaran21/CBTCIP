@@ -34,9 +34,9 @@
         </Border>
         <Grid >
             <Grid.RowDefinitions>
-                <RowDefinition Height="70"></RowDefinition>
-                <RowDefinition Height="80"></RowDefinition>
-                <RowDefinition Height="120"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
             </Grid.RowDefinitions>
             <StackPanel>
                 <TextBlock Height="15"></TextBlock>
@@ -46,14 +46,14 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1">
                 <TextBlock Text=" Book Your Event Now!" Foreground="Beige" FontFamily="Georgia" VerticalAlignment="Center" HorizontalAlignment="Center" Height="20" FontSize="15" Width="160" ></TextBlock> 
             </StackPanel>
-            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Height="50">
+           
                 <TextBlock  Width="20"></TextBlock>
-                <Button Content="Conference" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="50" Width="120" Click="Button_Click_3"/>
+                <Button Content="Conference" VerticalAlignment="Stretch" Grid.Row="2" HorizontalAlignment="Left" Height="70" Width="120" Click="Button_Click_3"/>
                 <TextBlock  Width="50"></TextBlock>
-                <Button Content="Party" Height="50" Width="120" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Button_Click_2"/>
+                <Button Content="Party" Height="70" Width="120" VerticalAlignment="Stretch" Grid.Row="2" Click="Button_Click_2"/>
                 <TextBlock  Width="50"></TextBlock>
-                <Button Content="Wedding" Height="50" Width="120" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Button_Click_1"/>
-            </StackPanel>
+                <Button Content="Wedding" Height="70" Width="120" VerticalAlignment="Stretch" Grid.Row="2" HorizontalAlignment="Right"  Click="Button_Click_1"/>
+         
         </Grid>
     </Grid>
 </Window>

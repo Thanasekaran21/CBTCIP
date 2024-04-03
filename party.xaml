@@ -59,9 +59,9 @@
                 <TextBlock Height="20"></TextBlock>
                 <ComboBox x:Name="hallslist" Height="20" Width="100" Foreground="LightCoral" SelectionChanged="hallslist_SelectionChanged_1"></ComboBox>
                 <TextBlock Height="15"></TextBlock>
-                    <TextBlock Text="Seating Capacity" Background="LightCoral" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="LightCoral" FontFamily="Tahoma" FontSize="11" Height="17" Width="85"></TextBlock>
+                    <TextBlock Text="Seating Capacity" Background="LightCoral" HorizontalAlignment="Center" VerticalAlignment="Center"  FontFamily="Tahoma" FontSize="11" Height="17" Width="85"></TextBlock>
                 <TextBlock Height="8"></TextBlock>
-                <TextBlock x:Name="strengthdetails"  Height="15" Width="35"></TextBlock>
+                    <TextBlock x:Name="strengthdetails" Background="LightCoral" HorizontalAlignment="Center" VerticalAlignment="Center"  Height="15" Width="35"></TextBlock>
                 <TextBlock Height="13"></TextBlock>
                 <Button Content="Book Now" Height="32" Width="120" Click="Button_Click_2" ></Button>
             </StackPanel>
@@ -90,6 +90,7 @@
                 <TextBox Height="24" Width="100"></TextBox>
                 <TextBlock Height="30"></TextBlock>
                     <Button x:Name="cnfrmbooking" Content="Confirm" Height="25" Width="120" Click="cnfrmbooking_Click_1"></Button>
+                    <TextBlock Height="20"></TextBlock>
                     <Button x:Name="BudgettrackingParty" Content="Budget Tracking" Height="25" Width="120" Click="Budgettracking_Click_1"></Button>
                  
                 </StackPanel>

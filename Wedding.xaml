@@ -43,7 +43,6 @@
                     <TextBlock Text="Location:" FontFamily="Tahoma" Foreground="SkyBlue" Height="30" Width="70" FontSize="18"></TextBlock>
                     <TextBlock Height="19"></TextBlock>
                     <TextBlock Text="Date:" FontFamily="Tahoma" Foreground="SkyBlue" Height="30" Width="70" FontSize="18"></TextBlock>
-                 
                 </StackPanel>
                 <StackPanel Height="150" Orientation="Vertical" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1"  >
                     <TextBlock Height="23"></TextBlock>
@@ -55,15 +54,16 @@
                     <Button Content=" Check " Height="25" Width="120" Click="Button_Click_3"></Button>
                 </StackPanel>
                 <StackPanel x:Name="venuespanel" Visibility="Hidden"  Orientation="Vertical" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" >
+                    
                     <TextBlock Text="Available  Venues" FontFamily="Tahoma" Foreground="SkyBlue" Height="20" Width="120" FontSize="14" ></TextBlock>
                     <TextBlock Height="10"></TextBlock>
                     <TextBlock Text="Venues" FontFamily="Tahoma" Foreground="SkyBlue" FontSize="18" HorizontalAlignment="Center" Height="20" Width="80" ></TextBlock>
                     <TextBlock Height="20"></TextBlock>
                     <ComboBox x:Name="hallslist" Height="20" Foreground="SkyBlue" Width="100" SelectionChanged="hallslist_SelectionChanged_1"></ComboBox>
                     <TextBlock Height="10"></TextBlock>
-                    <TextBlock Text="Seating Capacity" FontFamily="Tahoma" Background="SkyBlue" Foreground="SkyBlue" Height="17" Width="100"></TextBlock>
+                    <TextBlock Text="Seating Capacity" FontFamily="Tahoma" Height="17" Width="100"></TextBlock>
                     <TextBlock Height="8"></TextBlock>
-                    <TextBlock x:Name="strengthdetails" Height="20" Width="50"></TextBlock>
+                    <TextBlock x:Name="strengthdetails" Background="SkyBlue" HorizontalAlignment="Center" Height="20" Width="50"></TextBlock>
                     <TextBlock Height="13"></TextBlock>
                     <Button Content="Book Now" Height="20" Width="120" Click="Button_Click_2"></Button>
                 </StackPanel>
