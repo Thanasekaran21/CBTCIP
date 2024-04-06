@@ -63,6 +63,7 @@
     <Compile Include="BudgetTrackingParty.xaml.cs">
       <DependentUpon>BudgetTrackingParty.xaml</DependentUpon>
     </Compile>
+    <Compile Include="payment.cs" />
     <Compile Include="Conference.xaml.cs">
       <DependentUpon>Conference.xaml</DependentUpon>
     </Compile>

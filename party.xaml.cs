@@ -24,6 +24,8 @@ namespace EVENTPLANNER360
 
        List<string> partytypes = new List<string>();
 
+       List<payment> partypayments = new List<payment>();
+
         public party()
         {
 
@@ -64,6 +66,16 @@ namespace EVENTPLANNER360
             Mlist.Add(new Detailsclass("Madurai", "Sri Ram meeting hall", "1000"));
             Mlist.Add(new Detailsclass("Madurai", "Amaran Meeting hall", "800"));
             Mlist.Add(new Detailsclass("Madurai", "Lotus Hall madurai", "800"));
+
+            partypayments.Add (new payment ("UPI"));
+            partypayments.Add(new payment("Debit Card"));
+            partypayments.Add(new payment("Credit Card"));
+            partypayments.Add(new payment("Digitalmobile wallet"));
+            partypayments.Add(new payment("Bank Transfer"));
+
+            var X = partypayments.Select(temp => temp.paymentmethod);
+
+            paymentportal.ItemsSource = X.ToList();
 
             var City = Mlist.Select(temp => temp.City);
 

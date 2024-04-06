@@ -85,7 +85,7 @@
                 <TextBlock Height="10"></TextBlock>
                 <TextBox Height="28" Background="Transparent" Width="125"></TextBox>
                 <TextBlock Height="10"></TextBlock>
-                <ComboBox Height="20" Width="70"></ComboBox>
+                <ComboBox x:Name="paymentportal" Height="20" Width="70"></ComboBox>
                 <TextBlock Height="10"></TextBlock>
                 <TextBox Height="24" Width="100"></TextBox>
                 <TextBlock Height="30"></TextBlock>

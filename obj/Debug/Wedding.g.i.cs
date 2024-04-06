@@ -120,6 +120,14 @@ namespace EVENTPLANNER360 {
         #line hidden
         
         
+        #line 90 "..\..\Wedding.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ComboBox paymentportal;
+        
+        #line default
+        #line hidden
+        
+        
         #line 94 "..\..\Wedding.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button cnfrmbooking;
@@ -224,6 +232,9 @@ namespace EVENTPLANNER360 {
             this.Addresstxt = ((System.Windows.Controls.TextBox)(target));
             return;
             case 13:
+            this.paymentportal = ((System.Windows.Controls.ComboBox)(target));
+            return;
+            case 14:
             this.cnfrmbooking = ((System.Windows.Controls.Button)(target));
             
             #line 94 "..\..\Wedding.xaml"
@@ -232,7 +243,7 @@ namespace EVENTPLANNER360 {
             #line default
             #line hidden
             return;
-            case 14:
+            case 15:
             this.Budgettracking = ((System.Windows.Controls.Button)(target));
             
             #line 96 "..\..\Wedding.xaml"

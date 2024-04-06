@@ -22,6 +22,7 @@ namespace EVENTPLANNER360
     {
         List<Detailsclass> Clist = new List<Detailsclass>();
 
+        List<payment> conferencepayment = new List<payment>();
 
         public Conference()
         {
@@ -54,7 +55,15 @@ namespace EVENTPLANNER360
             Clist.Add(new Detailsclass("Madurai", "Amaran Meeting hall", "800"));
             Clist.Add(new Detailsclass("Madurai", "Lotus Hall madurai", "800"));
 
+            conferencepayment.Add(new payment("UPI"));
+            conferencepayment.Add(new payment("Debit Card"));
+            conferencepayment.Add(new payment("Credit Card"));
+            conferencepayment.Add(new payment("Digitalmobile wallet"));
+            conferencepayment.Add(new payment("Bank Transfer"));
 
+            var X = conferencepayment.Select(temp => temp.paymentmethod);
+
+            Paymentportal.ItemsSource = X.ToList();
 
             var A = Clist.Select(temp => temp.City);
 
