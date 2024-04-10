@@ -20,11 +20,17 @@ namespace EVENTPLANNER360
     /// </summary>
     public partial class Wedding : Window
     {
+       
+
         List<Detailsclass> Mlist = new List<Detailsclass>();
+
+        List<payment> weddingpayment = new List<payment>();
 
         public Wedding()
         {
             InitializeComponent();
+
+          
 
             dateselection.DisplayDateStart = DateTime.Today;
 
@@ -53,6 +59,16 @@ namespace EVENTPLANNER360
             Mlist.Add(new Detailsclass("Madurai", "Amaran Meeting hall", "800"));
             Mlist.Add(new Detailsclass("Madurai", "Lotus Hall madurai", "800"));
 
+            weddingpayment.Add(new payment("UPI"));
+            weddingpayment.Add(new payment ("Debit Card"));
+            weddingpayment.Add(new payment("Credit Card"));
+            weddingpayment.Add(new payment("Digitalmobile Wallet"));
+            weddingpayment.Add(new payment("Bank Transfer"));
+
+            var X = weddingpayment.Select(temp => temp.paymentmethod);
+
+            paymentportal.ItemsSource = X.ToList();
+
             var City = Mlist.Select(temp => temp.City);
 
             Locationcmbox.ItemsSource = City.Distinct().ToList();
@@ -79,7 +95,7 @@ namespace EVENTPLANNER360
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
 
-            venuespanel.Visibility = Visibility.Visible;
+           
 
         }
 
@@ -107,6 +123,7 @@ namespace EVENTPLANNER360
 
             if (Datecheck == dateselection.Text && Venuecheck == hallslist.SelectedItem.ToString())
             {
+
                 MessageBox.Show("Sorry :( venue has been booked already on the selected date Choose Some other date");
 
             }
@@ -114,9 +131,19 @@ namespace EVENTPLANNER360
             else
             {
 
-                D1.Visibility = Visibility.Visible;
-
-                D2.Visibility = Visibility.Visible;
+                namel.Visibility = Visibility.Visible;
+                Nametxt.Visibility = Visibility.Visible;
+                numl.Visibility = Visibility.Visible;
+                Numbertxt.Visibility = Visibility.Visible;
+                Addressl.Visibility = Visibility.Visible;
+                Addresstxt.Visibility = Visibility.Visible;
+                Detailsl.Visibility = Visibility.Visible;
+                detailstxt.Visibility = Visibility.Visible;
+                Paymentl.Visibility = Visibility.Visible;
+                paymentportal.Visibility = Visibility.Visible;
+                officetxt.Visibility = Visibility.Visible;
+                cnfrmbooking.Visibility = Visibility.Visible;
+                Budgettracking.Visibility = Visibility.Visible;
 
 
             }

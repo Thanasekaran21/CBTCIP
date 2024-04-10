@@ -28,7 +28,6 @@ C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVEN
 C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\obj\Debug\EVENTPLANNER360.pdb
 C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\bin\Debug\EVENTPLANNER360.exe
 C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\bin\Debug\EVENTPLANNER360.pdb
-C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\obj\Debug\EVENTPLANNER360.csprojResolveAssemblyReference.cache
 C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\obj\Debug\BudgetTrackingWedding.baml
 C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\obj\Debug\BudgetTrackingConference.baml
 C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\obj\Debug\BudgetTrackingParty.baml
@@ -48,3 +47,4 @@ C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVEN
 C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\obj\Debug\EVENTPLANNER360.g.resources
 C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\obj\Debug\EVENTPLANNER360.Properties.Resources.resources
 C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\obj\Debug\EVENTPLANNER360.csproj.GenerateResource.Cache
+C:\Users\Thanasekaran\Documents\Visual Studio 2012\Projects\EVENTPLANNER360\EVENTPLANNER360\obj\Debug\EVENTPLANNER360.csprojResolveAssemblyReference.cache

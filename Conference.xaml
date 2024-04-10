@@ -3,6 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Conference" Height="400" Width="350">
     <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderThickness">
+                <Setter.Value>
+                    <Thickness Bottom="2"></Thickness>
+                </Setter.Value>
+            </Setter>
+        </Style>
         <Style TargetType="Button">
             <Setter Property="Template">
                 <Setter.Value>
@@ -91,7 +98,7 @@
                 <TextBlock Height="10"></TextBlock>
                     <TextBox Height="28" Background="Transparent" Width="125"></TextBox>
                 <TextBlock Height="10"></TextBlock>
-                    <ComboBox Height="20" Background="Transparent" Width="70"></ComboBox>
+                    <ComboBox x:Name="Paymentportal" Height="20" Background="Transparent" Width="70"></ComboBox>
                 <TextBlock Height="10"></TextBlock>
                     <TextBox Height="24" Background="Transparent" Width="100"></TextBox>
                 <TextBlock Height="30"></TextBlock>
