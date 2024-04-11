@@ -121,11 +121,21 @@ namespace EVENTPLANNER360
 
             else
             {
-
-                D1.Visibility = Visibility.Visible;
-
-                D2.Visibility = Visibility.Visible;
-            
+                namel.Visibility = Visibility.Visible;
+                Nametxt.Visibility = Visibility.Visible;
+                numl.Visibility = Visibility.Visible;
+                Numbertxt.Visibility = Visibility.Visible;
+                Addressl.Visibility = Visibility.Visible;
+                Addresstxt.Visibility = Visibility.Visible;
+                Detailsl.Visibility = Visibility.Visible;
+                detailstxt.Visibility = Visibility.Visible;
+                Paymentl.Visibility = Visibility.Visible;
+                Paymentportal.Visibility = Visibility.Visible;
+                officetxt.Visibility = Visibility.Visible;
+                cnfrmbooking.Visibility = Visibility.Visible;
+                trackingbudget.Visibility = Visibility.Visible;
+                officel.Visibility = Visibility.Visible;
+               
                
             }
  
@@ -137,7 +147,7 @@ namespace EVENTPLANNER360
         {
 
 
-            venuespanel.Visibility = Visibility.Visible;
+           
 
         }
 

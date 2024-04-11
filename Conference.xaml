@@ -1,7 +1,7 @@
 ﻿<Window x:Class="EVENTPLANNER360.Conference"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Conference" Height="400" Width="350">
+        Title="Conference" Height="400" Width="350" ResizeMode="CanResizeWithGrip" MinHeight="550" MinWidth="900">
     <Window.Resources>
         <Style TargetType="TextBox">
             <Setter Property="BorderThickness">
@@ -39,73 +39,81 @@
         <ScrollViewer> 
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="230"></RowDefinition>
-                    <RowDefinition Height="200"></RowDefinition>
-                        <RowDefinition Height="280"></RowDefinition>
-               
-            </Grid.RowDefinitions>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                    <RowDefinition MinHeight="35" Height="35*"></RowDefinition>
+                </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"></ColumnDefinition>
-                <ColumnDefinition Width="200"></ColumnDefinition>
-                <ColumnDefinition Width="195"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <StackPanel Height="150" Orientation="Vertical" VerticalAlignment="Center" Margin="0,10,0,21" >
-                <TextBlock Text="Location:" Foreground="Brown" Height="30" Width="70" FontFamily="Tahoma" FontSize="18"></TextBlock>
-                <TextBlock Height="19"></TextBlock>
-                    <TextBlock Text="Date:" Foreground="Brown"  Height="30" Width="70" FontFamily="Tahoma" FontSize="18"></TextBlock>
-                <TextBlock Height="17"></TextBlock>
-                    <TextBlock Text="Strength:" Foreground="Brown" Height="30" FontFamily="Tahoma" Width="70" FontSize="18"></TextBlock>
-               
-            </StackPanel>
-            <StackPanel Height="210" Orientation="Vertical" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Margin="0,10" >
-                <TextBlock Height="23"></TextBlock>
-                <ComboBox x:Name="Locationcmbox" Height="25" Foreground="Brown" Width="100" SelectionChanged="Locationcmbox_SelectionChanged_1" ></ComboBox>
-                <TextBlock Height="25"></TextBlock>
-                <DatePicker x:Name="dateselection" Height="25" Width="110" Background="Transparent"></DatePicker>
-                    <TextBlock Height="26"></TextBlock>
-                <TextBox Height="20" Width="50" Background="Transparent"></TextBox>
-                <TextBlock Height="23" ></TextBlock>
-                <Button Content="check availability"  Height="30" Width="100" Click="Button_Click_3"></Button>
-            </StackPanel>
-            <StackPanel x:Name="venuespanel" Visibility="Hidden" Orientation="Vertical" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" >
-                    <TextBlock Text="Available  Venues" Height="20" Width="100" FontSize="12" FontFamily="Tahoma" Foreground="Brown"  ></TextBlock>
-                <TextBlock Height="10"></TextBlock>
-                    <TextBlock Text="Halls Available" Height="20" Width="80" FontSize="12" FontFamily="Tahoma" Foreground="Brown" ></TextBlock>
-                <TextBlock Height="20"></TextBlock>
-                <ComboBox x:Name="hallslist" Height="20" Width="100" Foreground="Brown" SelectionChanged="hallslist_SelectionChanged_1"></ComboBox>
-                <TextBlock Height="10"></TextBlock>
-                    <TextBlock TextAlignment="Center" TextWrapping="Wrap" Foreground="Brown" FontFamily="Georgia" Width="150" FontSize="10" Background="Transparent" Text="Once hall booked you will get a call from venue side"></TextBlock>
-                <TextBlock Height="25"></TextBlock>
-                <Button Content="Book Now" Height="20" Width="70" Click="Button_Click_2"></Button>     
-            </StackPanel>
+                    <ColumnDefinition MinWidth="20" Width="20*"></ColumnDefinition>
+                    <ColumnDefinition MinWidth="20" Width="20*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
            
-            <StackPanel x:Name="D1" Visibility="Hidden" Orientation="Vertical" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="0" Width="100">
-                <TextBlock Height="10"></TextBlock>
-                    <TextBlock Text="Name" FontFamily="Tahoma" Height="32" Foreground="Brown" Width="50"></TextBlock>
-                    <TextBlock Text="Number" FontFamily="Tahoma" Height="32" Foreground="Brown" Width="50"></TextBlock>
-                    <TextBlock  Text="Address" FontFamily="Tahoma" Height="32" Foreground="Brown" Width="50"></TextBlock>
-                    <TextBlock TextWrapping="Wrap" FontFamily="Tahoma" Foreground="Brown" Text="Details" Height="35" Width="50"></TextBlock>
-                    <TextBlock Text="Payment" Height="32" FontFamily="Tahoma" Foreground="Brown" Width="50"></TextBlock>
-                    <TextBlock TextWrapping="Wrap" Text="Office Name" FontFamily="Tahoma" Foreground="Brown" Height="35" Width="50"></TextBlock>
-            </StackPanel>
-            <StackPanel x:Name="D2" Visibility="Hidden" Orientation="Vertical" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="1" Width="190">
-                <TextBlock Height="10"></TextBlock>
-                <TextBox x:Name="Nametxt" Background="Transparent" Height="20" Width="80"></TextBox>
-                <TextBlock Height="10"></TextBlock>
-                    <TextBox x:Name="Numbertxt" Background="Transparent" Height="20" Width="80"></TextBox>
-                <TextBlock Height="10"></TextBlock>
-                    <TextBox x:Name="Addresstxt" Background="Transparent" Height="20" Width="115"></TextBox>
-                <TextBlock Height="10"></TextBlock>
-                    <TextBox Height="28" Background="Transparent" Width="125"></TextBox>
-                <TextBlock Height="10"></TextBlock>
-                    <ComboBox x:Name="Paymentportal" Height="20" Background="Transparent" Width="70"></ComboBox>
-                <TextBlock Height="10"></TextBlock>
-                    <TextBox Height="24" Background="Transparent" Width="100"></TextBox>
-                <TextBlock Height="30"></TextBlock>
-                <Button x:Name="cnfrmbooking" Content="Confirm Booking" Height="25" Width="110" Click="cnfrmbooking_Click_1"></Button>
-                    <TextBlock Height="10"></TextBlock>
-                    <Button x:Name="trackingbudget" Content="Budget Tracking" Height="25" Width="110" Click="trackingbudget_Click_1"></Button>
-                </StackPanel>
+                <TextBlock Text="Choose Location:" HorizontalAlignment="Center" Foreground="Brown"  FontFamily="Tahoma" Grid.Row="0" FontSize="24"></TextBlock>
+
+                <TextBlock Text="Choose Date:" Foreground="Brown"   FontFamily="Tahoma" HorizontalAlignment="Center"  Grid.Row="1" FontSize="24"></TextBlock>
+
+                <TextBlock Text="Strength:" Foreground="Brown"  FontFamily="Tahoma" HorizontalAlignment="Center"  Grid.Row="2" FontSize="24"></TextBlock>
+
+
+
+
+                <ComboBox x:Name="Locationcmbox" Height="25" Foreground="Brown" Width="180" HorizontalAlignment="Left"  Grid.Row="0" Grid.Column="1" SelectionChanged="Locationcmbox_SelectionChanged_1" ></ComboBox>
+
+                <DatePicker x:Name="dateselection" Height="25" Width="180" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Background="Transparent"></DatePicker>
+
+                <TextBox Height="25" Width="50" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" Background="Transparent"></TextBox>
+
+                <Button Content="check availability" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Width="130" Click="Button_Click_3"></Button>
+
+                <TextBlock Text="Available  Venues" Grid.Row="5" Grid.Column="1"  FontSize="18" FontFamily="Tahoma" Foreground="Brown" HorizontalAlignment="Left"  ></TextBlock>
+
+
+                <ComboBox x:Name="hallslist" Grid.Row="6" Grid.Column="1" Height="25" Width="180" HorizontalAlignment="Left" Foreground="Brown" SelectionChanged="hallslist_SelectionChanged_1"></ComboBox>
+
+
+                <Button Content="Book Now"  Width="130" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" Click="Button_Click_2"></Button>
+
+
+                <TextBlock Text="Name" x:Name="namel" Visibility="Hidden"  FontFamily="Tahoma" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Center" Foreground="Brown" FontSize="18" ></TextBlock>
+                <TextBlock Text="Number" x:Name="numl" Visibility="Hidden" FontFamily="Tahoma" Grid.Row="10" Grid.Column="0" HorizontalAlignment="Center"  Foreground="Brown" FontSize="18"></TextBlock>
+                <TextBlock  Text="Address" x:Name="Addressl" Visibility="Hidden" FontFamily="Tahoma" Grid.Row="11" Grid.Column="0" HorizontalAlignment="Center"  Foreground="Brown" FontSize="18"></TextBlock>
+                <TextBlock TextWrapping="Wrap" x:Name="Detailsl" Visibility="Hidden" FontFamily="Tahoma" Grid.Row="12" Grid.Column="0" HorizontalAlignment="Center" Foreground="Brown" Text="Conference Details" FontSize="18" ></TextBlock>
+                <TextBlock Text="Payment" x:Name="Paymentl" Visibility="Hidden"  FontFamily="Tahoma" Grid.Row="13" Grid.Column="0" Foreground="Brown" HorizontalAlignment="Center" FontSize="18" ></TextBlock>
+                <TextBlock TextWrapping="Wrap" x:Name="officel" Visibility="Hidden" Text="Office Name" FontFamily="Tahoma" Grid.Row="14" Grid.Column="0" Foreground="Brown" HorizontalAlignment="Center" FontSize="18"></TextBlock>
+
+
+                <TextBox x:Name="Nametxt" Background="Transparent" Grid.Row="9" Grid.Column="1" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Center" Width="180"></TextBox>
+
+                <TextBox x:Name="Numbertxt" Background="Transparent" Grid.Row="10" Grid.Column="1" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Center" Width="180"></TextBox>
+
+                <TextBox x:Name="Addresstxt" Background="Transparent" Grid.Row="11" Grid.Column="1" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Center" Width="180"></TextBox>
+
+                <TextBox x:Name="detailstxt" Height="28" Background="Transparent" Grid.Row="12" Grid.Column="1" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Center" Width="180"></TextBox>
+
+                <ComboBox x:Name="Paymentportal" Height="20" Grid.Row="13" Grid.Column="1" Background="Transparent" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Center" Width="180"></ComboBox>
+
+                <TextBox x:Name="officetxt" Visibility="Hidden" Width="180" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="14" Grid.Column="1" ></TextBox>
+
+                <Button x:Name="cnfrmbooking" Content="Confirm Booking" Grid.Row="15" Grid.Column="1" Visibility="Hidden" Width="130" HorizontalAlignment="Left"  Click="cnfrmbooking_Click_1"></Button>
+
+                <Button x:Name="trackingbudget" Content="Budget Tracking"  Grid.Row="17" Grid.Column="1" Visibility="Hidden" Width="130" HorizontalAlignment="Left"  Click="trackingbudget_Click_1"></Button>
+               
         </Grid>
  </ScrollViewer>
     </Grid>
