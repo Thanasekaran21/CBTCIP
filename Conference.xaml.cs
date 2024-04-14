@@ -189,6 +189,17 @@ namespace EVENTPLANNER360
 
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            MainWindow mainpage = new MainWindow();
+
+            this.Close();
+
+            mainpage.Show();
+
+        }
+
     }
 }
 

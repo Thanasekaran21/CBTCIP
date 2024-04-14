@@ -113,8 +113,10 @@
                 <Button x:Name="cnfrmbooking" Content="Confirm Booking" Grid.Row="15" Grid.Column="1" Visibility="Hidden" Width="130" HorizontalAlignment="Left"  Click="cnfrmbooking_Click_1"></Button>
 
                 <Button x:Name="trackingbudget" Content="Budget Tracking"  Grid.Row="17" Grid.Column="1" Visibility="Hidden" Width="130" HorizontalAlignment="Left"  Click="trackingbudget_Click_1"></Button>
-               
-        </Grid>
+
+                <Button Content="Go Back" HorizontalAlignment="Left" Width="120" Grid.Row="7" Grid.Column="0" Click="Button_Click_1"></Button>
+
+            </Grid>
  </ScrollViewer>
     </Grid>
 </Window>

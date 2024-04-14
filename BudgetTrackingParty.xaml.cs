@@ -22,7 +22,7 @@ namespace EVENTPLANNER360
     {
         List<Budget_Tracking> budgettrackingparty = new List<Budget_Tracking>();
 
-        int TotalAmount = 0;
+        int TotalAmount = 25000;
 
         public BudgetTrackingParty()
         {

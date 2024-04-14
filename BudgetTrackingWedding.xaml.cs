@@ -20,7 +20,7 @@ namespace EVENTPLANNER360
     /// </summary>
     public partial class BudgetTracking : Window
     {
-        List<Budget_Tracking> budgettrackingwedding = new List<Budget_Tracking>(); int TotalAmount = 0;
+        List<Budget_Tracking> budgettrackingwedding = new List<Budget_Tracking>(); int TotalAmount = 50000;
 
         public BudgetTracking()
         {
